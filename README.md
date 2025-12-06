@@ -1,20 +1,37 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+export default function Home() {
+  return (
+    <div style={{
+      background: "#f5f5f5",
+      minHeight: "100vh",
+      padding: "50px",
+      fontFamily: "Arial"
+    }}>
+      <div style={{
+        maxWidth: "700px",
+        margin: "auto",
+        background: "#fff",
+        padding: "40px",
+        borderRadius: "12px",
+        boxShadow: "0 4px 20px rgba(0,0,0,0.1)"
+      }}>
+        <h1 style={{ fontSize: "36px", marginBottom: "10px" }}>My AI Studio App</h1>
+        <p style={{ fontSize: "18px", color: "#555" }}>
+          Powered by Gemini API. Edit UI easily in Visual Studio Code.
+        </p>
 
-# Run and deploy your AI Studio app
-
-This contains everything you need to run your app locally.
-
-View your app in AI Studio: https://ai.studio/apps/drive/1G2qZnotou34xKVrv9v30ynRubgF4asZk
-
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+        <button style={{
+          marginTop: "20px",
+          background: "#007bff",
+          color: "white",
+          padding: "12px 20px",
+          border: "none",
+          borderRadius: "8px",
+          cursor: "pointer",
+          fontSize: "16px"
+        }}>
+          Start App
+        </button>
+      </div>
+    </div>
+  );
+}
